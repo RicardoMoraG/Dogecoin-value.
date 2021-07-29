@@ -1,7 +1,5 @@
 name: Doge_Value
-on: 
-  schedule:
-    - cron: '0 10 * * *'
+on: [pull_request, workflow_dispatch]
 jobs:
   check-build:
     runs-on: ubuntu-latest 
