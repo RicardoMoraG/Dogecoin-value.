@@ -1,0 +1,14 @@
+name: Doge_Value
+on: 
+  schedule:
+    - cron: '0 10 * * *'
+jobs:
+  check-build:
+    runs-on: ubuntu-latest 
+    steps: 
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.4'
+      - run: python Doge_Value.py
+      
