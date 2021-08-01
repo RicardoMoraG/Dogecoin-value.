@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Doge_Value](https://github.com/RicardoMoraG/Dogecoin-value./actions/workflows/Doge_Value.yml/badge.svg)](https://github.com/RicardoMoraG/Dogecoin-value./actions/workflows/Doge_Value.yml)
+
 # Dogecoin-value.
 Ejercicio de practica Python en el cual se obtiene el valor de la criptomoneda _$DOGE_ cada día, así como su ranking en la página de _CoinMarketCap_.
 
