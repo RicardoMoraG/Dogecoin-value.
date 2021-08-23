@@ -26,9 +26,9 @@ entry_rank = html_cont.find_all('div', {'class': 'sc-16r8icm-0 bILTHz'})
 
 # we recieve the data needed from the divs
 for i, entries in enumerate(entry):
-    doge_price = entries.find('div', {'class': 'priceValue___11gHJ'}).text
+    doge_price = entries.find('div', {'class': 'priceValue'}).text
 for i, entries in enumerate((entry_rank)):
-    doge_rank = entries.find('div', {'class': 'namePill___3p_Ii namePillPrimary___2-GWA'}).text
+    doge_rank = entries.find('div', {'class': 'namePillPrimary'}).text
 print(date," - ", doge_price, " - ", doge_rank) # test print
 
 # pandas dataframe to send the data to the csv file
