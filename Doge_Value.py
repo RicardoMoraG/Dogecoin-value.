@@ -21,7 +21,7 @@ req = requests.get(url)
 html_cont = BeautifulSoup(req.text, "html.parser") 
 
 # we get all the divs were the needed entries are
-entry = html_cont.find_all('div', {'class': 'sc-57oli2-0 dEqHl cmc-body-wrapper'})
+entry = html_cont.find_all('div', {'class': 'priceTitle'})
 entry_rank = html_cont.find_all('div', {'class': 'sc-16r8icm-0 bILTHz'})
 
 # we recieve the data needed from the divs
