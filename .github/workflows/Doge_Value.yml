@@ -1,5 +1,7 @@
 name: Doge_Value
-on: workflow_dispatch
+on: 
+  schedule:
+    - cron: '0 17 * * *'
 jobs:
   check-build:
     runs-on: ubuntu-latest 
