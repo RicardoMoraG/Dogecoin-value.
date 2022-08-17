@@ -21,14 +21,14 @@ req = requests.get(url)
 html_cont = BeautifulSoup(req.text, "html.parser") 
 
 # we get all the divs were the needed entries are
-entry = html_cont.find_all('div', {'class': 'priceTitle'})
-entry_rank = html_cont.find_all('div', {'class': 'sc-16r8icm-0 bILTHz'})
+entry = html_cont.find_all('div', {'class': 'sc-57oli2-0 comDeo cmc-body-wrapper'})
+entry_rank = html_cont.find_all('div', {'class': 'sc-16r8icm-0 kjciSH top-summary-container'})
 
 # we recieve the data needed from the divs
 for i, entries in enumerate(entry):
     doge_price = entries.find('div', {'class': 'priceValue'}).text
 for i, entries in enumerate((entry_rank)):
-    doge_rank = entries.find('div', {'class': 'namePillPrimary'}).text
+    doge_rank = entries.find('div', {'class': 'namePill namePillPrimary'}).text
 print(date," - ", doge_price, " - ", doge_rank) # test print
 
 # pandas dataframe to send the data to the csv file
