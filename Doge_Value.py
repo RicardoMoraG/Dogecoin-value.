@@ -21,8 +21,8 @@ req = requests.get(url)
 html_cont = BeautifulSoup(req.text, "html.parser") 
 
 # we get all the divs were the needed entries are
-entry = html_cont.find_all('div', {'class': 'sc-57oli2-0 comDeo cmc-body-wrapper'})
-entry_rank = html_cont.find_all('div', {'class': 'sc-16r8icm-0 kjciSH top-summary-container'})
+entry = html_cont.find_all('div', {'class': 'sc-4vztjb-0 cLXodu cmc-body-wrapper'})
+entry_rank = html_cont.find_all('div', {'class': 'sc-1prm8qw-0 cyZVgY top-summary-container'})
 
 # we recieve the data needed from the divs
 for i, entries in enumerate(entry):
