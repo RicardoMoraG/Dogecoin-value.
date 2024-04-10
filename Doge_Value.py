@@ -40,7 +40,7 @@ df_update = pd.read_csv('DogeValue.csv')
 df_yesterday = pd.Series(df_data.loc[0, 'Date'])
 if df_yesterday.isin(df_update['Date']).bool() == False:
     # append new data to the table and save the updated file
-    df_update = df_update.concat(df_data).sort_values(by = 'Date', ascending = False)
+    df_update = df_update._append(df_data).sort_values(by = 'Date', ascending = False)
     df_update.to_csv('DogeValue.csv', index = False)
 else:
     print("There are duplicated data")
